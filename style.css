@@ -1,0 +1,75 @@
+html,
+body,
+div,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.video-cover {
+    position: fixed;
+    z-index: -200;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+.controls{
+    position: fixed;
+    bottom: 0px;
+} progress {
+    color: blue;
+    font-size: 12px;
+    width: 220px;
+    height: 16px;
+    border: none;
+    margin-right: 10px;
+    background: #434343;
+    border-radius: 9px;
+    vertical-align: middle;
+  }
+  progress::-moz-progress-bar { 
+    color:blue;
+    background:#434343; 
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: #434343;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  
+  progress[value]::-webkit-progress-value {
+    background-color: blue;
+  }
+  

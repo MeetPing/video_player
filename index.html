@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body id="body" onkeypress="showorhide()">
+        <div class="video-cover">
+                <video id="video" autoplay class="video" preload="auto">
+                    <source src="Minecraft but it lags.mp4" type="video/mp4">
+                </video>
+            </div>
+        <div class="controls" id="controls">
+            <button id="playbutton" onclick="playbtn()"><i class="fas fa-play"></i></button>
+            <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+            <button id='btnFullScreen' class='fullscreen' onclick='toggleFullScreen();'><i class="fas fa-compress"></i></button>
+        </div>
+    </video>
+</body>
+<script src="script.js"></script>
+</html>
